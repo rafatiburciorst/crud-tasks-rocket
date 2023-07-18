@@ -1,0 +1,27 @@
+{
+  "name": "d1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "prisma": "^5.0.0",
+    "tsup": "^7.1.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6",
+    "vitest": "^0.33.0"
+  },
+  "scripts": {
+    "dev": "tsx --watch src/server.ts",
+    "build": "tsup src/",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@prisma/client": "5.0.0",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.20.0",
+    "fastify-multer": "^2.0.3",
+    "zod": "^3.21.4"
+  }
+}
